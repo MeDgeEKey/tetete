@@ -15,8 +15,8 @@ let GAME_SETTINGS = {
     minBombHits: Math.floor(Math.random() * 8)+5,
     minIceHits: Math.floor(Math.random() * 2) + 2,
     flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
-    minDelayMs: 2000,
-    maxDelayMs: 5000,
+    minDelayMs: 20000,
+    maxDelayMs: 50000,
 };
 
 let isGamePaused = false;
@@ -120,7 +120,7 @@ try {
     }
 
     function getNewGameDelay() {
-        return Math.floor(Math.random() * (3000 - 1000 + 1) + 10000);
+        return Math.floor(Math.random() * (3000 - 1000 + 1) + 1000);
     }
 
     function checkAndClickPlayButton() {
