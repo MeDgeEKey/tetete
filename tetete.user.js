@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.10
+// @version      1.11
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -120,7 +120,7 @@ try {
     }
 
     function getNewGameDelay() {
-        return Math.floor(Math.random() * (2000 - 1000 + 1) + 3600);
+        return Math.floor(Math.random() * (2000 - 1000 + 1) + 4300);
     }
 
     function checkAndClickPlayButton() {
