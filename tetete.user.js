@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.08
+// @version      1.09
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -15,8 +15,8 @@ let GAME_SETTINGS = {
     minBombHits: Math.floor(Math.random() * 8)+5,
     minIceHits: Math.floor(Math.random() * 2) + 2,
     flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
-    minDelayMs: 20000,
-    maxDelayMs: 50000,
+    minDelayMs: 2000,
+    maxDelayMs: 5000,
 };
 
 let isGamePaused = false;
@@ -135,7 +135,7 @@ try {
 
     function continuousPlayButtonCheck() {
         checkAndClickPlayButton();
-        setTimeout(continuousPlayButtonCheck, 1000);
+        setTimeout(continuousPlayButtonCheck, 3000);
     }
 
     const observer = new MutationObserver(mutations => {
