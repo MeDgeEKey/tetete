@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.04
+// @version      1.05
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -165,6 +165,7 @@ try {
     pauseButton.style.border = 'none';
     pauseButton.style.borderRadius = '10px';
     pauseButton.style.cursor = 'pointer';
+    pauseButton.classList.add('test123');
     pauseButton.onclick = toggleGamePause;
     document.body.appendChild(pauseButton);
 
