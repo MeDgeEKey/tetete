@@ -6,8 +6,8 @@
 // @match        https://telegram.blum.codes/*
 // @grant        none
 // @icon         https://cdn.prod.website-files.com/65b6a1a4a0e2af577bccce96/65ba99c1616e21b24009b86c_blum-256.png
-// @downloadURL  https://raw.githubusercontent.com/MeDgeEKey/tetete/main/tetete.js
-// @updateURL    https://raw.githubusercontent.com/MeDgeEKey/tetete/main/tetete.js
+// @downloadURL  https://github.com/MeDgeEKey/tetete/raw/main/tetete.js
+// @updateURL    https://github.com/MeDgeEKey/tetete/raw/main/tetete.js
 // @homepage     https://www.google.com/search?client=opera&q=google&sourceid=opera&ie=UTF-8&oe=UTF-8
 // ==/UserScript==
 
