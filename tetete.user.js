@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Blum Autoclicker
+// @name         Blume miner
 // @version      1.0
 // @namespace    Violentmonkey Scripts
 // @author       cheltbl
