@@ -14,7 +14,7 @@
 let GAME_SETTINGS = {
     minBombHits: Math.floor(Math.random() * 2),
     minIceHits: Math.floor(Math.random() * 2) + 2,
-    flowerSkipPercentage: Math.floor(Math.random() * 16) + 18,
+    flowerSkipPercentage: Math.floor(Math.random() * 50) + 18,
     minDelayMs: 2000,
     maxDelayMs: 5000,
 };
