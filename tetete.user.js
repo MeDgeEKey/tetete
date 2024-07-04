@@ -120,7 +120,7 @@ try {
     }
 
     function getNewGameDelay() {
-        return Math.floor(Math.random() * (3000 - 1000 + 1) + 1000);
+        return Math.floor(Math.random() * (3000 - 1000 + 1) + 10000);
     }
 
     function checkAndClickPlayButton() {
