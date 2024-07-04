@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.0
+// @version      1.01
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -14,7 +14,7 @@
 let GAME_SETTINGS = {
     minBombHits: Math.floor(Math.random() * 2),
     minIceHits: Math.floor(Math.random() * 2) + 2,
-    flowerSkipPercentage: Math.floor(Math.random() * 50) + 18,
+    flowerSkipPercentage: Math.floor(Math.random() * 18) + 18,
     minDelayMs: 2000,
     maxDelayMs: 5000,
 };
