@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Blume miner
 // @version      1.0
-// @namespace    Violentmonkey Scripts
+// @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
 // @grant        none
