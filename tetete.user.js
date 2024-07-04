@@ -6,8 +6,8 @@
 // @match        https://telegram.blum.codes/*
 // @grant        none
 // @icon         https://cdn.prod.website-files.com/65b6a1a4a0e2af577bccce96/65ba99c1616e21b24009b86c_blum-256.png
-// @downloadURL  https://github.com/MeDgeEKey/tetete/blob/main/tetete.user.js
-// @updateURL    https://github.com/MeDgeEKey/tetete/blob/main/tetete.user.js
+// @downloadURL  https://github.com/MeDgeEKey/tetete/raw/main/tetete.user.js
+// @updateURL    https://github.com/MeDgeEKey/tetete/raw/main/tetete.user.js
 // @homepage     https://www.google.com/search?client=opera&q=google&sourceid=opera&ie=UTF-8&oe=UTF-8
 // ==/UserScript==
 
@@ -109,7 +109,7 @@ try {
         GAME_SETTINGS = {
             minBombHits: Math.floor(Math.random() * 2),
             minIceHits: Math.floor(Math.random() * 2) + 2,
-            flowerSkipPercentage: Math.floor(Math.random() * 16) + 18,
+            flowerSkipPercentage: Math.floor(Math.random() * 19) + 15,
             minDelayMs: 2000,
             maxDelayMs: 5000,
         };
