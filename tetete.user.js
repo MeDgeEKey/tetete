@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.05
+// @version      1.06
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -12,9 +12,9 @@
 // ==/UserScript==
 
 let GAME_SETTINGS = {
-    minBombHits: Math.floor(Math.random() * 5)+4,
+    minBombHits: Math.floor(Math.random() * 8)+5,
     minIceHits: Math.floor(Math.random() * 2) + 2,
-    flowerSkipPercentage: Math.floor(Math.random() * 25) + 18,
+    flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
     minDelayMs: 2000,
     maxDelayMs: 5000,
 };
@@ -107,9 +107,9 @@ try {
 
     function resetGameSettings() {
         GAME_SETTINGS = {
-            minBombHits: Math.floor(Math.random() * 5)+4,
+            minBombHits: Math.floor(Math.random() * 8)+5,
             minIceHits: Math.floor(Math.random() * 2) + 2,
-            flowerSkipPercentage: Math.floor(Math.random() * 25) + 18,
+            flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
             minDelayMs: 2000,
             maxDelayMs: 5000,
         };
