@@ -66,6 +66,7 @@ try {
     }
 
     function processBomb(element) {
+        console.log(gameStats.bombHits )
         if (gameStats.bombHits < GAME_SETTINGS.minBombHits) {
             gameStats.score = 0;
             clickElement(element);
