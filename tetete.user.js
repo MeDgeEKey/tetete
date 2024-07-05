@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.12
+// @version      1.13
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -114,6 +114,7 @@ try {
             minDelayMs: 2000,
             maxDelayMs: 5000,
         };
+                console.log(gameStats.bombHits )
     }
 
     function getRandomDelay() {
