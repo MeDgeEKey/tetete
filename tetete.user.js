@@ -108,7 +108,7 @@ try {
 
     function resetGameSettings() {
         GAME_SETTINGS = {
-            bombHitPercentage: Math.floor(Math.random() * 40)+20,
+            bombHitPercentage: Math.floor(Math.random() * 40)+40,
             minIceHits: Math.floor(Math.random() * 2) + 2,
             flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
             minDelayMs: 2000,
