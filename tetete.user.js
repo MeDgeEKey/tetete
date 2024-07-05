@@ -12,7 +12,7 @@
 // ==/UserScript==
 
 let GAME_SETTINGS = {
-    minBombHits: Math.floor(Math.random() * 8)+5,
+    bombHitPercentage: Math.floor(Math.random() * 40)+40,
     minIceHits: Math.floor(Math.random() * 2) + 2,
     flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
     minDelayMs: 2000,
@@ -66,8 +66,8 @@ try {
     }
 
     function processBomb(element) {
-        pauseButton.textContent =gameStats.bombHits;
-        if (gameStats.bombHits < GAME_SETTINGS.minBombHits) {
+        const shouldHit = Math.random() < (GAME_SETTINGS.bombHitPercentage / 100);
+        if (shouldHit==true) {
             gameStats.score = 0;
             clickElement(element);
             gameStats.bombHits++;
@@ -108,7 +108,7 @@ try {
 
     function resetGameSettings() {
         GAME_SETTINGS = {
-            minBombHits: Math.floor(Math.random() * 8)+5,
+            bombHitPercentage: Math.floor(Math.random() * 40)+20,
             minIceHits: Math.floor(Math.random() * 2) + 2,
             flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
             minDelayMs: 2000,
