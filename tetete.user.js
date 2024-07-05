@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.18
+// @version      1.19
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -167,7 +167,7 @@ try {
     pauseButton.style.border = 'none';
     pauseButton.style.borderRadius = '10px';
     pauseButton.style.cursor = 'pointer';
-    pauseButton.classList.add('test123');
+    pauseButton.classList.add('StopTest');
     pauseButton.onclick = toggleGamePause;
     document.body.appendChild(pauseButton);
 
@@ -175,12 +175,12 @@ try {
         isGamePaused = !isGamePaused;
         pauseButton.textContent = isGamePaused ? 'Resume' : 'Pause';
         if(isGamePaused){
-            pauseButton.classList.add('Resume');
-            pauseButton.classList.remove('Stop');
+            pauseButton.classList.add('ResumeTest');
+            pauseButton.classList.remove('StopTest');
         }
         else{
-            pauseButton.classList.remove('Resume');
-            pauseButton.classList.add('Stop');
+            pauseButton.classList.remove('ResumeTest');
+            pauseButton.classList.add('StopTest');
         }
     }
 } catch (e) {
