@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.14
+// @version      1.15
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -66,8 +66,7 @@ try {
     }
 
     function processBomb(element) {
-        pauseButton.textContent ='52';
-        console.log(gameStats.bombHits )
+        pauseButton.textContent =gameStats.bombHits;
         if (gameStats.bombHits < GAME_SETTINGS.minBombHits) {
             gameStats.score = 0;
             clickElement(element);
@@ -115,7 +114,7 @@ try {
             minDelayMs: 2000,
             maxDelayMs: 5000,
         };
-                console.log(gameStats.bombHits )
+
     }
 
     function getRandomDelay() {
