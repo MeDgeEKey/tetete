@@ -12,9 +12,9 @@
 // ==/UserScript==
 
 let GAME_SETTINGS = {
-    bombHitPercentage: Math.floor(Math.random() * 40)+40,
+    bombHitPercentage: Math.floor(Math.random() * 30)+60,
     minIceHits: Math.floor(Math.random() * 2) + 2,
-    flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
+    flowerSkipPercentage: Math.floor(Math.random() * 24) + 20,
     minDelayMs: 2000,
     maxDelayMs: 5000,
 };
@@ -108,9 +108,9 @@ try {
 
     function resetGameSettings() {
         GAME_SETTINGS = {
-            bombHitPercentage: Math.floor(Math.random() * 40)+40,
+            bombHitPercentage: Math.floor(Math.random() * 30)+60,
             minIceHits: Math.floor(Math.random() * 2) + 2,
-            flowerSkipPercentage: Math.floor(Math.random() * 24) + 15,
+            flowerSkipPercentage: Math.floor(Math.random() * 24) + 20,
             minDelayMs: 2000,
             maxDelayMs: 5000,
         };
