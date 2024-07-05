@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.16
+// @version      1.18
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -174,6 +174,14 @@ try {
     function toggleGamePause() {
         isGamePaused = !isGamePaused;
         pauseButton.textContent = isGamePaused ? 'Resume' : 'Pause';
+        if(isGamePaused){
+            pauseButton.classList.add('Resume');
+            pauseButton.classList.remove('Stop');
+        }
+        else{
+            pauseButton.classList.remove('Resume');
+            pauseButton.classList.add('Stop');
+        }
     }
 } catch (e) {
     // В случае ошибки, не выводим ее в консоль
