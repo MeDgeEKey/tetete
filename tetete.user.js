@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.23
+// @version      1.24
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
