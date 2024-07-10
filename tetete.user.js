@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.25
+// @version      1.26
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -13,7 +13,7 @@
 
 let GAME_SETTINGS = {
     bombHitPercentage: Math.floor(Math.random() * 4),
-    minIceHits: Math.floor(Math.random() * 2) + 2,
+    IceHitPercentage: Math.floor(Math.random() * 20) + 20,
     flowerSkipPercentage: Math.floor(Math.random() * 24) + 20,
     minDelayMs: 2000,
     maxDelayMs: 5000,
@@ -75,7 +75,8 @@ try {
     }
 
     function processIce(element) {
-        if (gameStats.iceHits < GAME_SETTINGS.minIceHits) {
+        const shouldHit = Math.random() < (GAME_SETTINGS.IceHitPercentage / 100);
+        if (shouldHit==true) {
             clickElement(element);
             gameStats.iceHits++;
         }
@@ -109,7 +110,7 @@ try {
     function resetGameSettings() {
         GAME_SETTINGS = {
             bombHitPercentage: Math.floor(Math.random() * 4),
-            minIceHits: Math.floor(Math.random() * 2) + 2,
+            IceHitPercentage: Math.floor(Math.random() * 20) + 20,
             flowerSkipPercentage: Math.floor(Math.random() * 24) + 20,
             minDelayMs: 2000,
             maxDelayMs: 5000,
