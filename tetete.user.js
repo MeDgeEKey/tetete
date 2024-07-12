@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.32
+// @version      1.33
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -89,10 +89,10 @@ try {
     }
 
     function checkGameCompletion() {
-        console.log('checkGameCompletion');
+        alert('checkGameCompletion');
         const rewardElement = document.querySelector('#app > div > div > div.content > div.reward');
         if (rewardElement && !gameStats.isGameOver) {
-            console.log('checkGameCompletion22222');
+            alert('checkGameCompletion22222');
             gameStats.isGameOver = true;
             resetGameStats();
             resetGameSettings();
@@ -129,11 +129,11 @@ try {
     }
 
     function checkAndClickPlayButton() {
-        console.log('checkAndClickPlayButton');
+        alert('checkAndClickPlayButton');
         const playButton = document.querySelector('button.kit-button.is-large.is-primary');
         if (playButton && playButton.textContent.includes('Play')) {
             setTimeout(() => {
-                console.log('checkAndClickPlayButton22222');
+                alert('checkAndClickPlayButton22222');
                 playButton.click();
                 gameStats.isGameOver = false;
             }, getNewGameDelay());
@@ -141,7 +141,7 @@ try {
     }
 
     function continuousPlayButtonCheck() {
-        console.log('continuousPlayButtonCheck');
+        alert('continuousPlayButtonCheck');
         checkAndClickPlayButton();
         setTimeout(continuousPlayButtonCheck, 3000);
     }
