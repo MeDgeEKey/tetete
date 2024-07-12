@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.34
+// @version      1.35
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -131,6 +131,8 @@ try {
     function checkAndClickPlayButton() {
         alert('checkAndClickPlayButton');
         const playButton = document.querySelector('button.kit-button.is-large.is-primary');
+        alert(playButton);
+        alert(playButton.textContent);
         if (playButton && playButton.textContent.includes('Play')) {
             setTimeout(() => {
                 alert('checkAndClickPlayButton22222');
