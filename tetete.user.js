@@ -130,6 +130,7 @@ try {
         const playButton = document.querySelector('button.kit-button.is-large.is-primary');
         if (playButton && playButton.textContent.includes('Play')) {
             setTimeout(() => {
+                console.log("нажимаю play")
                 playButton.click();
                 gameStats.isGameOver = false;
             }, getNewGameDelay());
