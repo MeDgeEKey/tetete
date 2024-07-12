@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.33
+// @version      1.34
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -89,7 +89,7 @@ try {
     }
 
     function checkGameCompletion() {
-        alert('checkGameCompletion');
+
         const rewardElement = document.querySelector('#app > div > div > div.content > div.reward');
         if (rewardElement && !gameStats.isGameOver) {
             alert('checkGameCompletion22222');
@@ -141,7 +141,7 @@ try {
     }
 
     function continuousPlayButtonCheck() {
-        alert('continuousPlayButtonCheck');
+
         checkAndClickPlayButton();
         setTimeout(continuousPlayButtonCheck, 3000);
     }
