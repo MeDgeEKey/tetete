@@ -33,7 +33,9 @@ try {
     const originalPush = Array.prototype.push;
     Array.prototype.push = function (...items) {
         if (!isGamePaused) {
-            items.forEach(item => handleGameElement(item));
+            items.forEach(item => {
+                setTimeout(() => handleGameElement(item), Math.random()*3000+2000); 
+            });
         }
         return originalPush.apply(this, items);
     };
