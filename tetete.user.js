@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.39
+// @version      1.40
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -34,7 +34,7 @@ try {
     Array.prototype.push = function (...items) {
         if (!isGamePaused) {
             items.forEach(item => {
-                setTimeout(() => handleGameElement(item), Math.random()*1800+1800); 
+                setTimeout(() => handleGameElement(item), Math.random()*1000+800); 
             });
         }
         return originalPush.apply(this, items);
