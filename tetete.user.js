@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.40
+// @version      1.41
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -20,6 +20,7 @@ let GAME_SETTINGS = {
 };
 
 let isGamePaused = false;
+let isFoundDogs= false
 
 try {
     let gameStats = {
@@ -54,6 +55,9 @@ try {
             case "FREEZE":
                 processIce(element);
                 break;
+            default:
+                isFoundDogs = true;
+            break;
         }
     }
 
@@ -145,7 +149,7 @@ try {
 
     function checkAndClickPlayButton() {
             const playButton = getPlayButton();
-            if (playButton) {
+            if (playButton&&isFoundDogs==false) {
                setTimeout(() => {
                     playButton.click();
                     gameStats.isGameOver = false;
