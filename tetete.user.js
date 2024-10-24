@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Blume miner
-// @version      1.41
+// @version      1.42
 // @namespace    cheltbl
 // @author       cheltbl
 // @match        https://telegram.blum.codes/*
@@ -55,9 +55,9 @@ try {
             case "FREEZE":
                 processIce(element);
                 break;
-            default:
-                isFoundDogs = true;
-            break;
+          //  default:
+          //      isFoundDogs = true;
+         //   break;
         }
     }
 
